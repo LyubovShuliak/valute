@@ -48,12 +48,20 @@ const CurrencyRatesPage = () => {
   const showCurrencies = () => {
     dispatch(fetchCurrencies());
     setShowList(!showList);
+    if (!selectedCurrency) {
+      setSelectedCurrency("USD");
+      dispatch(fetchCurrenciesByBase(selectedCurrency.toLowerCase()));
+
+    }
   };
   const handleFilter = (e: React.ChangeEvent<HTMLInputElement>) => {
     const val = e.target.value;
     const newVal = currenciesList.filter((item) =>
       item[0].toLowerCase().includes(val.toLowerCase())
     );
+    if (!showList) {
+      setShowList(true);
+    }
     setFilteredCurrenciesList(newVal);
     setSelectedCurrency(val);
   };
