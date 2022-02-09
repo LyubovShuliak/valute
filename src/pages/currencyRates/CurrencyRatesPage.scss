@@ -1,0 +1,64 @@
+.select_container {
+  width: 100%;
+  margin: 30px 60px 60px 60px;
+  .currencies {
+    width: 234px;
+    .currency_option {
+      border: 1px solid black;
+      padding: 2px 2px 2px 2px;
+      background-color: white;
+      margin: 1px 1px 1px 1px;
+      &:hover {
+        background-color: rgb(74, 163, 251);
+      }
+    }
+    .selected {
+      background-color: rgb(74, 163, 251);
+    }
+  }
+  .courses_container {
+    max-width: 900px;
+    min-width: 300px;
+    margin: auto;
+  }
+}
+
+.currencies_shown {
+  display: none;
+}
+.select_currency {
+  display: flex;
+  width: 210px;
+  flex-direction: row;
+  border: 2px solid black;
+  padding: 2px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+  border-radius: 5px;
+
+  input {
+    display: block;
+    width: 60px;
+    background-color: rgba(168, 199, 199, 0.993);
+    text-align: center;
+    font-weight: bold;
+  }
+}
+.table {
+  height: 600px;
+}
+
+.currencies {
+  position: absolute;
+}
+.back {
+  display: flex;
+  margin-bottom: 60px;
+  align-items: center;
+  gap: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: fit-content;
+}

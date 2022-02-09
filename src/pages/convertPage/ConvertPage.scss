@@ -1,0 +1,29 @@
+.conversation_container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  width: 600px;
+  margin: auto;
+  margin-top: 300px;
+}
+.inputField {
+  border: none;
+}
+
+.error {
+  position: absolute;
+  margin: 30px;
+  color: red;
+}
+.show {
+  display: none;
+}
+
+.link_to_rates {
+  text-decoration: none;
+  margin: auto;
+  margin-top: 80px;
+  text-transform: uppercase;
+  font-weight: bold;
+
+}
